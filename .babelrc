@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "react",
+    "flow",
+    ["env", {
+      "targets": { "browsers": ["last 2 versions", "ie 11"] },
+      "useBuiltIns": true,
+      "modules": false
+    }]
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread"
+  ],
+  "env": {
+    "test": {
+      "presets": ["react", "flow", "env"],
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread"
+      ]
+    }
+  }
+}

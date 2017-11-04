@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "env": { "browser": true },
+  "rules": {
+    "prefer-destructuring": "off"
+  },
+  "overrides": [
+    {
+      files: ["*.test.*"],
+      env: { browser: true, mocha: true },
+      rules: {
+      }
+    }
+  ]
+}
