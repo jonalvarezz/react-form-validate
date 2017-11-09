@@ -4,8 +4,8 @@ Provides a component to validate form's inputs and allow you to render the error
 ## TODO
 * [x] (Tests) Finish tests cases
 * [ ] (Documentation) Flow 
-* [ ] (Documentation) onSubmit(data:Object) prop 
-* [ ] (Documentation) More about the error render props with examples
+* [x] (Documentation) onSubmit(data:Object) prop 
+* [ ] (Documentation) Add demo
 * [ ] (Package) Publish to NPM
 
 ## Usage
@@ -33,3 +33,16 @@ function MyForm(props) {
 
 export default MyForm
 ```
+
+## Props
+### `children?: Function (errors:Object) => ReactElement`
+A function is expected as the `children` prop type, which will take the `errors` object as first argument. If you are wondering why to use a render function (Render Props) instead of a HoC, take a look to [Michael Jackson - Never Write Another HoC](https://www.youtube.com/watch?v=BcVAq3YFiuc)
+
+### `onSubmit?: Function (data:Object, submitEvent:Event)`
+The `onSubmit` prop will be called when the form validation has succeed, with no errors. onSubmit will be called with the following parameters:
+* `data`: Object representing the form data. (`{ name: "inputValue" }`).
+* `submitEvent`: The submit event.
+
+### `...otherProps?: Object`
+Any other given propType will be passed down to the `form` element.
+
