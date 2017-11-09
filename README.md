@@ -2,7 +2,7 @@
 Provides a component to validate form's inputs and allow you to render the errors the way you like.
 
 ## TODO
-* [ ] (Tests) Finish tests cases
+* [x] (Tests) Finish tests cases
 * [ ] (Documentation) Flow 
 * [ ] (Documentation) onSubmit(data:Object) prop 
 * [ ] (Documentation) More about the error render props with examples
