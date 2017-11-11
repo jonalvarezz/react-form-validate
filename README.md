@@ -1,11 +1,13 @@
 # React Form Validate
 Provides a component to validate form's inputs and allow you to render the errors the way you like.
 
+**[View Demo](http://jonalvarezz.github.io/react-form-validate/)**
+
 ## TODO
 * [x] (Tests) Finish tests cases
 * [ ] (Documentation) Flow 
 * [x] (Documentation) onSubmit(data:Object) prop 
-* [ ] (Documentation) Add demo
+* [x] (Documentation) Add demo
 * [ ] (Package) Publish to NPM
 
 ## Usage
